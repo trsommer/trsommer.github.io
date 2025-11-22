@@ -1,16 +1,44 @@
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#shader-toggle {
+    margin-top: 20px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+#shader-toggle:hover {
+    border-color: #70b9b0;
+    color: #70b9b0;
+    background: rgba(112, 185, 176, 0.1);
+}
 
 /* Desktop */
 
-@media only screen
-and (min-device-width: 1300px) {
+@media only screen and (min-device-width: 1300px) {
     body {
         font-family: sans-serif;
         font-size: 18px;
         line-height: 1.42857143;
         margin: 0;
-        background: #dcebe9;
+        background: black;
+        color: white;
     }
-    
+
     #header {
         width: 100%;
         height: 100vh;
@@ -19,7 +47,7 @@ and (min-device-width: 1300px) {
         justify-content: center;
         align-items: center;
     }
-    
+
     #header h1 {
         font-size: 6vw;
         font-weight: 500;
@@ -27,47 +55,47 @@ and (min-device-width: 1300px) {
         margin: 0;
         color: #70b9b0;
     }
-    
+
     #header h3 {
         font-size: 3vw;
         font-weight: 500;
         line-height: 1.5;
         margin: 0;
-        color: rgb(100, 100, 100);
+        color: rgb(200, 200, 200);
     }
-    
+
     #header h6 {
         font-size: 1.8vw;
         font-weight: 500;
         line-height: 1.5;
         margin: 0;
-        color: rgb(143, 143, 143);
+        color: rgb(180, 180, 180);
         margin-bottom: 20px;
     }
-    
+
     #linklist {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    
+
     .link {
         margin-left: 10px;
         margin-right: 10px;
-        border: 2px solid grey;
+        border: 2px solid white;
         padding-left: 10px;
         padding-right: 10px;
         border-radius: 20px;
         cursor: pointer;
     }
-    
-    .link:hover{
+
+    .link:hover {
         border: 2px solid #70b9b0;
         color: white;
         background-color: #70b9b0;
     }
-    
+
     .link p {
         margin: 5px;
     }
@@ -76,16 +104,16 @@ and (min-device-width: 1300px) {
 
 /* Mobile */
 
-@media only screen
-and (max-device-width: 1299px) {
+@media only screen and (max-device-width: 1299px) {
     body {
         font-family: sans-serif;
         font-size: 18px;
         line-height: 1.42857143;
         margin: 0;
-        background: #dcebe9;
+        background: black;
+        color: white;
     }
-    
+
     #header {
         width: 100%;
         height: 100vh;
@@ -94,59 +122,56 @@ and (max-device-width: 1299px) {
         justify-content: center;
         align-items: center;
     }
-    
+
     #header h1 {
-        font-size: 9vw;
+        font-size: 9vh;
         font-weight: 500;
         line-height: 1.1;
         margin: 0;
         color: #70b9b0;
     }
-    
+
     #header h3 {
         font-size: 4vw;
         font-weight: 500;
         line-height: 1.5;
         margin: 0;
-        color: rgb(100, 100, 100);
+        color: rgb(200, 200, 200);
     }
-    
+
     #header h6 {
         font-size: 3vw;
         font-weight: 500;
         line-height: 1.5;
         margin: 0;
-        color: rgb(143, 143, 143);
+        color: rgb(180, 180, 180);
         margin-bottom: 20px;
     }
-    
+
     #linklist {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    
+
     .link {
         margin-left: 10px;
         margin-right: 10px;
-        border: 2px solid grey;
+        border: 2px solid white;
         padding-left: 10px;
         padding-right: 10px;
         border-radius: 20px;
         cursor: pointer;
     }
-    
-    .link:hover{
+
+    .link:hover {
         border: 2px solid #70b9b0;
         color: white;
         background-color: #70b9b0;
     }
-    
+
     .link p {
         margin: 5px;
     }
 }
-
-
-
